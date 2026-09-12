@@ -52,7 +52,7 @@ Inside `North/Users`, created:
 ![Creating DL-ITAdmins Distribution Group](1-10.png)
 ![Groups Created](1-11.gif)
 
-**Why this matters:** knowing the difference between a *Security* group (can be assigned NTFS/share permissions, added to GPOs) and a *Distribution* group (email-only, no security token) is a fundamental AD administration concept that trips up a lot of newcomers.
+**Why this matters:** knowing the difference between a *Security* group (can be assigned NTFS/share permissions, added to GPOs) and a *Distribution* group (email-only, no security token) is a fundamental AD administration concept.
 
 ## Skills Demonstrated
 - Active Directory Domain Services installation and forest/domain promotion
