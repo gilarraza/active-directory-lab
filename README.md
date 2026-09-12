@@ -16,7 +16,7 @@ A hands-on home lab project deploying a Windows Server Active Directory environm
 ### 1. Promoted the Server to a Domain Controller
 Installed the AD DS role via Server Manager, then ran the Active Directory Domain Services Configuration Wizard, choosing **Add a new forest** and setting the root domain name.
 
-![Server Manager Dashboard](screenshots/01-server-manager-dashboard.gif)
+![Server Manager Dashboard](1-1.gif)
 ![Deployment Configuration — New Forest](screenshots/02-adds-deployment-config.png)
 
 ### 2. Configured Domain Controller Options
