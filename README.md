@@ -60,6 +60,3 @@ Inside `North/Users`, created:
 - OU design and organizational planning for a multi-site environment
 - Security vs. Distribution group scope and use cases
 - Working within Server Manager, ADUC, and the AD DS Configuration Wizard
-
-## Notes
-This is a personal home-lab project built for learning purposes, following a guided tutorial as a base and extended with a custom regional OU/group structure. All values (domain name, IPs, passwords) are lab-only and not representative of a production environment.
