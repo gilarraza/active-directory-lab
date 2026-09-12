@@ -1,4 +1,4 @@
-# Active Directory Lab — Multi-Region OU & Group Design
+# Active Directory Lab - Multi-Region OU & Group Design
 
 A hands-on home lab project deploying a Windows Server Active Directory environment from scratch, including a multi-region Organizational Unit (OU) structure and delegated security/distribution groups.
 
@@ -36,17 +36,17 @@ Confirmed the new domain (`llarraza.local`) appeared in Active Directory Users a
 ![Default Containers](1-6.gif)
 
 ### 5. Designed a Multi-Region OU Structure
-Rather than using the flat default containers, I built out a regional OU model — **North**, **South**, and **East** — each containing its own **Computer**, **Users**, and **Servers** sub-OUs. This mirrors how a real organization with multiple sites/offices would delegate management and apply Group Policy per region.
+Rather than using the flat default containers, I built out a regional OU model - **North**, **South**, and **East** - each containing its own **Computer**, **Users**, and **Servers** sub-OUs. This mirrors how a real organization with multiple sites/offices would delegate management and apply Group Policy per region.
 
 ![Top-Level OUs](1-7.png)
 ![Sub-OUs per Region](1-8.png)
 
-**Why this matters:** structuring OUs by region (rather than by object type alone) makes it possible to scope GPOs and delegate administrative permissions independently per site — e.g., a North IT admin doesn't need rights over South's objects.
+**Why this matters:** structuring OUs by region (rather than by object type alone) makes it possible to scope GPOs and delegate administrative permissions independently per site e.g., a North IT admin doesn't need rights over South's objects.
 
 ### 6. Created Security and Distribution Groups
 Inside `North/Users`, created:
-- **IT** — a *Security* group (global scope), used for permission/access assignment
-- **DL-ITAdmins** — a *Distribution* group, used for email distribution rather than access control
+- **IT** - a *Security* group (global scope), used for permission/access assignment
+- **DL-ITAdmins** - a *Distribution* group, used for email distribution rather than access control
 
 ![Creating IT Security Group](1-9.png)
 ![Creating DL-ITAdmins Distribution Group](1-10.png)
